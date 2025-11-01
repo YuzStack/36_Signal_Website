@@ -10,12 +10,12 @@ const allSections = document.querySelectorAll('.section');
 // Menu toggle ‼️
 bars.addEventListener('click', function () {
   overlay.classList.remove('hidden');
-  menu.classList.remove('translate-x-full');
+  menu.classList.remove('-translate-x-full');
 });
 
 const closeMenu = function () {
   overlay.classList.add('hidden');
-  menu.classList.add('translate-x-full');
+  menu.classList.add('-translate-x-full');
 };
 closeBtn.addEventListener('click', closeMenu);
 overlay.addEventListener('click', closeMenu);
